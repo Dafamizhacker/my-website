@@ -1,0 +1,25 @@
+# Exclude system files
+*.lnk
+*.regtrans-ms
+*.blf
+NTUSER.*
+
+# Exclude user-specific directories
+/AppData/
+/Documents/
+/Downloads/
+/Favorites/
+/Contacts/
+/Saved Games/
+/Searches/
+/Videos/
+/Pictures/
+/Music/
+/VirtualBox VMs/
+/node_modules/
+
+# Exclude Python/IDE-related directories
+.vscode/
+.idea/
+__pycache__/
+*.pyc
