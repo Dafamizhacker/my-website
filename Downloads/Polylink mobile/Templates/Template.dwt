@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PolyLink - A Social Networking Platform" />
+    <meta name="keywords" content="Social Networking, PolyLink, Community" />
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>PolyLink</title>
+    <!-- TemplateEndEditable -->
+    <link rel="stylesheet" href="file:///C|/Users/rouda/Downloads/Templates/css/main.min.css">
+    <link rel="stylesheet" href="file:///C|/Users/rouda/Downloads/Templates/css/style.css">
+    <link rel="stylesheet" href="file:///C|/Users/rouda/Downloads/Templates/css/color.css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body class="full-page">
+    <!-- TemplateBeginEditable name="EditRegion" -->EditRegion<!-- TemplateEndEditable -->    <!-- Header (Static) -->
+    <header>
+        <div class="logo.png">
+            <img src="file:///C|/Users/rouda/Downloads/Templates/images/logo.png" alt="PolyLink Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="file:///C|/Users/rouda/Downloads/Templates/index.html">Home</a></li>
+                <li><a href="file:///C|/Users/rouda/Downloads/Templates/about.html">About</a></li>
+                <li><a href="file:///C|/Users/rouda/Downloads/Templates/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content (Editable Region) -->
+    <div class="app-layout">
+        <section>
+            <div class="gap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="default-set">
+                                <div class="welcome-caro">
+                                    <!-- Editable Region Start -->
+                                    <!--#BeginEditable "main_content"-->
+                                    <div class="welcome-item">
+                                        <figure><img src="file:///C|/Users/rouda/Downloads/Templates/images/resources/welcome.png" alt=""></figure>
+                                        <h5>Welcome to PolyLink</h5>
+                                        <span>Your social community platform</span>
+                                        <p>
+                                            PolyLink is a social app designed for users and admins. It's highly flexible and offers a rich set of options and collections to enhance the user experience.
+                                        </p>
+                                        <a class="main-btn2" href="file:///C|/Users/rouda/Downloads/Templates/signup.html" title="">Join Today!</a>
+                                    </div>
+                                    <!--#EndEditable-->
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer (Static) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PolyLink. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="file:///C|/Users/rouda/Downloads/Templates/js/main.min.js"></script>
+    <script src="file:///C|/Users/rouda/Downloads/Templates/js/script.js"></script>
+</body>
+</html>
