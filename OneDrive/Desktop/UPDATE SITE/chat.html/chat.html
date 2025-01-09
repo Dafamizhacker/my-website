@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PolyLink Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to PolyLink Chat</h1>
+    </header>
+    <main>
+        <div id="chat-container">
+            <div id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+            <button id="send-message">Send</button>
+        </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        document.getElementById('send-message').addEventListener('click', () => {
+            const message = document.getElementById('chat-input').value;
+            socket.emit('chatMessage', message);
+            document.getElementById('chat-input').value = ''; // Clear input field
+        });
+
+        socket.on('chatMessage', (msg) => {
+            const chatBox = document.getElementById('chat-box');
+            const newMessage = document.createElement('p');
+            newMessage.textContent = msg;
+            chatBox.appendChild(newMessage);
+        });
+    </script>
+</body>
+</html>
