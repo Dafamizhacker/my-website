@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="YourNamespace.Site" %>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><asp:ContentPlaceHolder ID="head" runat="server" /></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="Home.aspx" title="">FALE-HOME 1</a></li>
+                        <li><a href="CompanyLanding.aspx" title="">Company Landing</a></li>
+                        <li><a href="PolyVibes.aspx" title="">POLY VIBES</a></li>
+                        <li><a href="Jobs.aspx" title="">JOBS</a></li>
+                        <li><a href="Shop.aspx" title="">Shop</a></li>
+                        <!-- Add remaining links -->
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </main>
+
+            <footer>
+                &copy; 2025 Your Company
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
