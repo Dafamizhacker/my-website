@@ -366,7 +366,7 @@ section {
 .gray-bg {
     float: left;
     width: 100%;
-    background:url(polybackground.jpg);/* Light tropical background */
+    background:var(--polynesian-blue);/* Light tropical background */
 }
 
 .bg-valvot{
@@ -492,11 +492,7 @@ a.pinterest {
     color: #ff6f61; /* Coral color for checked state */
 }
 
-/* Global font color */
-body {
-    color:var(--polynesian-gold); /* Set the default font color here */
-    font-family: 'Arial', sans-serif; /* Optional: Set your desired font */
-}
+
 
 
 
@@ -691,7 +687,7 @@ header.sticky {
 /*--- topbar ---*/
 
 .topbar {
-    background: #30305b;
+    background:var(--polynesian-green);
     display: block;
     height: 55px;
     padding: 0 15px;

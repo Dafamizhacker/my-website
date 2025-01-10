@@ -1,7 +1,6 @@
 /*!
- * Custom CSS for PolyLink Theme
- * Main Accent Color: #fa6342
- * Sections: Font Color, Background Color, Border Color
+ * Tropical Island CSS for PolyLink Theme
+ * Color Palette: Ocean Blue, Palm Green, Sunset Orange, Sandy Beige, Tropical Pink
  */
 
 /*=========================
@@ -261,99 +260,78 @@ span.ttl,
 .cart-prod > li > p > span,
 .total-line > ul li > b,
 .full-postmeta > h4 > span,
-.cat-heading > a,
-.total-line > ul li > span > i,
-.extras > a.play-btn:hover,
-.single-btn > li > a,
-.widget .grouppage-info > li,
-.title > a,
-.reg-from > span i,
-.ads-links > li > a:hover,
-.course-price,
-.course-details > a,
-.widget-title.purpel,
-.featured-meta > span svg,
-.head-title > a,
-.invitepage > li > a,
-span.progressbar {
-    color: #fa6342;
+.cat-heading > h3,
+.product-review > span a:hover,
+#reply > span > a > i,
+.nav-tabs > li > a > span:hover i,
+.story-box .add-story > a,
+.story-box .add-story > a i,
+.videotube-box > li a:hover,
+.add-caption, 
+.add-video-text > p,
+.suggestion-box > span,
+.suggestion-box a:hover,
+.cart-page-btn > span,
+.holiday-box > span,
+.top-categories > h3 > a:hover,
+.explore-meta > a,
+.activity-box > h3 a,
+h4.vote-title a:hover,
+.meduim-button:hover,
+#comments h3 .btn-more,
+.prof-header > span a,
+.general-meta .mem-update,
+.general-meta .mem-update i,
+.blog-box > ul li .active,
+.shopnow-button:hover
+{
+    color: #0077B6; /* Ocean Blue */
 }
 
-/**FOR BG**/
-/* custom-style.css */
-
-/* Set a tropical background gradient for the body */
-body {
-    background: linear-gradient(to bottom, #00b0b9, #ff7e5f); /* Tropical gradient from teal to coral */
-    background-repeat: no-repeat;
-    background-size: cover; /* Make sure the background fills the screen */
-    background-position: center;
-    color: #fff; /* White text for better contrast on tropical colors */
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif; /* Optional: change font for a more tropical feel */
+a {
+    color: #3a6e57; /* Palm Green */
 }
 
-/* Container Style with a slight tropical shadow effect */
-.container {
-    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1200px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Slight tropical shadow */
-    border-radius: 15px; /* Round corners for a tropical vibe */
+a:hover {
+    color: #FF6A13; /* Sunset Orange */
 }
 
-/* Wavy text with tropical color scheme */
-.wavy-wraper {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.wavy span {
-    display: inline-block;
-    font-size: 40px;
-    font-weight: bold;
-    color: #ff6f61; /* Coral pink color for a tropical feel */
-    animation: wave-animation 2s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--i)); /* Adds delay for a waving effect */
-}
-
-@keyframes wave-animation {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Buttons with a tropical style */
+/*=========================
+    BUTTONS AND ACTIONS
+=========================*/
 button, .btn {
-    background-color: #ff7e5f; /* Coral button */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #FF6A13; /* Sunset Orange */
+    color: #fff;
 }
 
-    button:hover, .btn:hover {
-        background-color: #ff3b2a; /* Darker coral when hovered */
-    }
+button:hover, .btn:hover {
+    background-color: #FF7F50; /* Coral Orange */
+}
 
-/* Footer with tropical color */
+.top-area .main-btn2 {
+    background-color: #0077B6; /* Ocean Blue */
+    color: white;
+}
+
+.top-area .main-btn2:hover {
+    background-color: #005f72; /* Darker Ocean Blue */
+}
+
+/*=========================
+    BACKGROUND AND PAGE LAYOUT
+=========================*/
+body {
+    background-color: #F5F5DC; /* Sandy Beige */
+    color: #333;
+}
+
+header {
+    background-color: #3a6e57; /* Palm Green */
+}
+
 footer {
-    background-color: #00b0b9; /* Teal footer */
-    padding: 20px 0;
-    text-align: center;
-    color: white;
-    font-size: 14px;
+    background-color: #0077B6; /* Ocean Blue */
+    color: #fff;
 }
+
+/* Add more tropical-themed accents here... */
