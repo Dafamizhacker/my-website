@@ -1,0 +1,22 @@
+def decode(message_file):
+    # Create an empty dictionary to store word-number pairs
+    word_dict = {}
+    
+    # Read the lines from the file
+    with open(message_file, 'r') as file:
+        lines = file.readlines()
+    
+    # Process each line to extract word-number pairs
+    for line in lines:
+        line = line.strip().split()
+        word_dict[int(line[0])] = line[1]
+    
+    # Initialize an empty list to store the words in ascending order
+    decoded_words = []
+    
+    # Iterate through the word_dict to construct the decoded words
+    for i in range(1, len(word_dict) + 1):
+        decoded_words.append(word_dict[i])
+    
+    # Return the decoded words joined into a single string
+    return ' '.join(decoded_words)

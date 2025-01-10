@@ -23,3 +23,8 @@ NTUSER.*
 .idea/
 __pycache__/
 *.pyc
+
+# Ensure images are not ignored
+!images/
+!*.jpg
+!*.png
