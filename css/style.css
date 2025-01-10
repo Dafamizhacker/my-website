@@ -52,6 +52,12 @@ Update Date:  01/January/2024
 ===============*/
 html,body{
 	font-family: "Roboto", "Segoe Ui";
+    /* Global font color */
+body {
+    color:darkred; /* Set the default font color here */
+    font-family: 'Arial', sans-serif; /* Optional: Set your desired font */
+}
+
 }
 body {
     float: left;
@@ -304,7 +310,7 @@ section {
 	background: #021727;
 }
 .whitish:before {
-    background: rgba(255, 255, 255, .9);
+    background: var(--polynesian-red);
 }
 
 .bluesh:before {
@@ -356,37 +362,47 @@ section {
     opacity: .5;
 }
 
+/* custom-style.css */
 .gray-bg {
     float: left;
     width: 100%;
-    background: #edf2f6;
+    background:url(polybackground.jpg);/* Light tropical background */
 }
+
 .bg-valvot{
-	background-color: #7750f8 !important;
+    background-color: #ff6f61 !important; /* Coral color */
 }
 
 .bg-purple{
-	background: #7750f8;
-}
-.bg-blue{
-	background: #23d2e2;
-}
-.bg-red{
-	background: #e44a3c;
-}
-.bg-green{
-    background: #38bff1;
+    background: #ff6f61; /* Coral color */
 }
 
+.bg-blue{
+    background: #00b0b9; /* Tropical teal */
+}
+
+.bg-red{
+    background: #ff8c42; /* Tropical orange */
+}
+
+.bg-green{
+    background: #34c759; /* Tropical green */
+}
+
+/* Tropical-like colors for like/dislike buttons */
 .like-dislike > li a.bg-purple{
-	background: #7750f8;
+    background: #ff6f61; /* Coral color */
 }
+
 .like-dislike > li a.bg-blue{
-	background: #23d2e2;
+    background: #00b0b9; /* Tropical teal */
 }
+
 .like-dislike > li a.bg-red{
-	background: #e44a3c;
+    background: #ff8c42; /* Tropical orange */
 }
+
+/* Buttons, form submit and clickable elements */
 [type="submit"],
 button,
 html [type="button"] {
@@ -397,74 +413,92 @@ textarea {
     resize: none;
 }
 
+/* Social media link hover effects */
 a:hover.facebook {
-    background: #516eab;
+    background: #4e89c9; /* Lighter blue */
 }
 
 a:hover.instagram {
-    background: #444;
+    background: #ff758f; /* Light tropical pink */
 }
 
 a:hover.twitter {
-    background: #55acee;
+    background: #1da1f2; /* Twitter blue */
 }
 
 a:hover.google {
-    background: #dd4b39;
+    background: #db4437; /* Google red */
 }
 
 a:hover.pinterest {
-    background: #ca212a;
+    background: #e60023; /* Pinterest red */
 }
 
 a:hover.youtube {
-    background: #e62117;
+    background: #ff0000; /* YouTube red */
 }
 
 a:hover.dribble {
-    background: #1572b8;
+    background: #ff725e; /* Tropical peach */
 }
 
 a:hover.linkedin {
-    background: #0077b5;
+    background: #0077b5; /* LinkedIn blue */
 }
 
 a:hover.tumblr {
-    background: #36465d;
+    background: #35465c; /* Tumblr dark blue */
 }
 
 a:hover.rss {
-    background: #e3a103;
+    background: #f2a900; /* RSS yellow */
 }
 
 a:hover.vk {
-    background: #466991;
+    background: #45668e; /* VK dark blue */
 }
 
-.checked {
-    color: orange;
-}
+/* Default social media link colors */
 a.facebook {
-    background: #516eab;
+    background: #4e89c9; /* Lighter blue */
 }
+
 a.twitter {
-    background: #00a6d3;
+    background: #1da1f2; /* Twitter blue */
 }
+
 a.vk {
-    background: #466991;
+    background: #45668e; /* VK dark blue */
 }
+
 a.dribble {
-    background: #1572b8;
+    background: #ff725e; /* Tropical peach */
 }
+
 a.google {
-    background: #dd4b39;
+    background: #db4437; /* Google red */
 }
+
 a.instagram {
-    background: #444;
+    background: #ff758f; /* Light tropical pink */
 }
+
 a.pinterest {
-    background: #ca212a;
+    background: #e60023; /* Pinterest red */
 }
+
+/* Checked elements color */
+.checked {
+    color: #ff6f61; /* Coral color for checked state */
+}
+
+/* Global font color */
+body {
+    color:var(--polynesian-gold); /* Set the default font color here */
+    font-family: 'Arial', sans-serif; /* Optional: Set your desired font */
+}
+
+
 
 /*--- social colors ---*/
 .facebook-color {
@@ -489,7 +523,7 @@ a.pinterest {
     color: #ca212a;
 }
 #nprogress .bar{
-	background: #D1D1D1;
+	background: var(--polynesian-brown);
 }
 /*carousel nave style*/
 
@@ -520,7 +554,7 @@ ul.owl-carousel {
 
 .owl-prev::before,
 .owl-next::before {
-    background: #fff;
+    background: var(--polynesian-red);
     border-radius: 50%;
     color: #fa6342;
     content: "\f0d9";
@@ -3555,6 +3589,16 @@ li.instagram {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Content Container Styles */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
 
 
 /*--- map and pickpoint map style ---*/
@@ -21708,4 +21752,9 @@ footer {
         font-size: 14px;
     }
 }
+
+
+
+
+
 
