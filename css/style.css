@@ -55,7 +55,7 @@ html,body{
     /* Global font color */
 body {
     color:#0000ff; /* Set the default font color here */
-    font-family: 'Arial', sans-serif; /* Optional: Set your desired font */
+    font-family: 'Arial', ; /* Optional: Set your desired font */
 }
 
 }
@@ -366,7 +366,7 @@ section {
 .gray-bg {
     float: left;
     width: 100%;
-    background:pink;/* polybackground */
+    background:url(../polybackground.PNG);/* polybackground */
 }
 
 .bg-valvot{
@@ -687,7 +687,7 @@ header.sticky {
 /*--- topbar ---*/
 
 .topbar {
-    background:indigo;
+    background:#a874d2;
     display: block;
     height: 55px;
     padding: 0 15px;
