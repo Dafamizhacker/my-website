@@ -54,7 +54,7 @@ html,body{
 	font-family: "Roboto", "Segoe Ui";
     /* Global font color */
 body {
-    color:darkred; /* Set the default font color here */
+    color:#0000ff; /* Set the default font color here */
     font-family: 'Arial', sans-serif; /* Optional: Set your desired font */
 }
 
@@ -310,7 +310,7 @@ section {
 	background: #021727;
 }
 .whitish:before {
-    background: var(--polynesian-red);
+    background:#F8F8FF;
 }
 
 .bluesh:before {
@@ -366,7 +366,7 @@ section {
 .gray-bg {
     float: left;
     width: 100%;
-    background:var(--polynesian-blue);/* Light tropical background */
+    background:pink;/* polybackground */
 }
 
 .bg-valvot{
@@ -687,7 +687,7 @@ header.sticky {
 /*--- topbar ---*/
 
 .topbar {
-    background:var(--polynesian-green);
+    background:indigo;
     display: block;
     height: 55px;
     padding: 0 15px;
@@ -4753,7 +4753,7 @@ canvas {
 }
 
 .mh-head {
-    background: #4bb5ef;
+    background:indigo;
     color: #fff;
     height: auto;
 }

@@ -289,7 +289,7 @@ h4.vote-title a:hover,
 }
 
 a {
-    color: #3a6e57; /* Palm Green */
+    color:olivedrab; /* Palm Green */
 }
 
 a:hover {
@@ -300,17 +300,17 @@ a:hover {
     BUTTONS AND ACTIONS
 =========================*/
 button, .btn {
-    background-color: #FF6A13; /* Sunset Orange */
-    color: #fff;
+    background-color:pink; /* Sunset Orange */
+    color:#0077B6;
 }
 
 button:hover, .btn:hover {
-    background-color: #FF7F50; /* Coral Orange */
+    background-color:pink; /* Coral Orange */
 }
 
 .top-area .main-btn2 {
     background-color: #0077B6; /* Ocean Blue */
-    color: white;
+    color:gray;
 }
 
 .top-area .main-btn2:hover {
