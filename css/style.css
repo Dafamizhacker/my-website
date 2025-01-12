@@ -5691,7 +5691,7 @@ a.main-btn3{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     border-radius: 30px;
-    color: #fff;
+    color:var(--polynesian-red);
     font-size: 13px;
     font-weight: 500;
     padding: 10px 26px;
