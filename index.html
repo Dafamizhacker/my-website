@@ -14,7 +14,70 @@
 	<link rel="stylesheet" href="css/color-pink.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <style>
+        .music-controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .music-controls button {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .music-controls button:hover {
+            background-color: #0056b3;
+        }
+        .volume-slider {
+            width: 50%;
+            margin: 10px auto;
+        }
+    </style>
 </head>
+<body>
+    <div class="music-player">
+        <h3 style="text-align: center;">🎵 Welcome to the PolyLink Music Player</h3>
+        <audio id="musicPlayer" src="poly-music.mp3/poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3"></audio>
+
+        <div class="music-controls">
+            <button id="playButton">▶ Play</button>
+            <button id="pauseButton">⏸ Pause</button>
+        </div>
+
+        <div class="volume-slider">
+            <label for="volumeControl" style="display: block; text-align: center;">Volume:</label>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+        const musicPlayer = document.getElementById('musicPlayer');
+        const volumeControl = document.getElementById('volumeControl');
+
+        // Play the audio
+        playButton.addEventListener('click', () => {
+            musicPlayer.play();
+        });
+
+        // Pause the audio
+        pauseButton.addEventListener('click', () => {
+            musicPlayer.pause();
+        });
+
+        // Adjust volume
+        volumeControl.addEventListener('input', (e) => {
+            musicPlayer.volume = e.target.value;
+        });
+    </script>
+</body>
+</html>
+
 <body>
 <div class="wavy-wraper">
 		<div class="wavy">
@@ -28,8 +91,20 @@
 		  <span style="--i:8;">K</span>
 		  <span style="--i:9;">💕</span>
 		</div>
-	</div>
+</div>
+<!-- 
+<!-- Background Music -->
+<!-- <audio id="background-music" autoplay loop>
+	<source src="poly-music.mp3/poly-music.mp3" type="audio/mp3">
+	Your browser does not support the audio element.
+</audio>
+<button onclick="document.getElementById(background-music).play()">Play Music</button>
+
 <div class="theme-layout">
+	<div class="music-controls">
+		<button onclick="pauseMusic()">Pause Music</button>
+		<button onclick="playMusic()">Play Music</button>
+	</div> --> -->
 	
 	<div class="postoverlay"></div>
 	
@@ -3531,73 +3606,49 @@
     </div>
 	
 	<script src="js/main.min.js"></script>
-	<script src="js/jquery-stories.js"></script>
-	<!--<script src="js/toast-notificatons.js"></script>-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script><!-- For timeline slide show -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3vI4IQqzxRU1449lbIHThUb2gCeDW47w&callback=initMap"></script><!-- for location picker map -->
-	<script src="js/locationpicker.jquery.js"></script><!-- for loaction picker map -->
-	<script src="js/map-init.js"></script><!-- map initilasition -->
-	<script src="js/page-tourintro.js"></script>
-	<script src="js/page-tour-init.js"></script>
-	<script src="js/stories-zuck.js"></script>
-	<script src="js/stories-zuck-necessery.js"></script>
-    <script src="js/stories-zuck-init.js"></script>
-	<script src="js/script.js"></script>
-	<script>
-		jQuery(document).ready(function($) {
-			
-			$('#us3').locationpicker({
-			  location: {
-			    latitude: -8.681013,
-			    longitude: 115.23506410000005
-			  },
-			  radius: 0,
-			  inputBinding: {
-			    latitudeInput: $('#us3-lat'),
-			    longitudeInput: $('#us3-lon'),
-			    radiusInput: $('#us3-radius'),
-			    locationNameInput: $('#us3-address')
-			  },
-			  enableAutocomplete: true,
-			  onchanged: function (currentLocation, radius, isMarkerDropped) {
-			    // Uncomment line below to show alert on each Location Changed event
-			    //alert("Location changed. New location (" + currentLocation.latitude + ", " + currentLocation.longitude + ")");
-			  }
-			});
-			
-		/*if ($.isFunction($.fn.toast)) {
-			$.toast({
-				heading: 'Welcome To POLYLINK',
-				text: '',
-				showHideTransition: 'slide',
-				icon: 'success',
-				loaderBg: '#fa6342',
-				position: 'bottom-right',
-				hideAfter: 3000,
-			});
+<script src="js/jquery-stories.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3vI4IQqzxRU1449lbIHThUb2gCeDW47w&callback=initMap"></script>
+<script src="js/locationpicker.jquery.js"></script>
+<script src="js/map-init.js"></script>
+<script src="js/page-tourintro.js"></script>
+<script src="js/page-tour-init.js"></script>
+<script src="js/stories-zuck.js"></script>
+<script src="js/stories-zuck-necessery.js"></script>
+<script src="js/stories-zuck-init.js"></script>
+<script src="js/script.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        // Map location picker
+        $('#us3').locationpicker({
+            location: {
+                latitude: -8.681013,
+                longitude: 115.23506410000005
+            },
+            radius: 0,
+            inputBinding: {
+                latitudeInput: $('#us3-lat'),
+                longitudeInput: $('#us3-lon'),
+                radiusInput: $('#us3-radius'),
+                locationNameInput: $('#us3-address')
+            },
+            enableAutocomplete: true,
+            onchanged: function (currentLocation, radius, isMarkerDropped) {
+                // Uncomment line below to show alert on each Location Changed event
+                // alert("Location changed. New location (" + currentLocation.latitude + ", " + currentLocation.longitude + ")");
+            }
+        });
 
-			$.toast({
-				heading: 'Information',
-				text: 'Now you can full demo of POLYLINK and hope you like',
-				showHideTransition: 'slide',
-				icon: 'info',
-				hideAfter: 5000,
-				loaderBg: '#fa6342',
-				position: 'bottom-right',
-			});
-			$.toast({
-				heading: 'Support & Help',
-				text: 'Report any <a href="#">issues</a> by email',
-				showHideTransition: 'fade',
-				icon: 'error',
-				hideAfter: 7000,
-				loaderBg: '#fa6342',
-				position: 'bottom-right',
-			});
-		}*/	
+        // Background music control
+        const music = document.getElementById('background-music');
 
-		});	
+        // Pause and play music on button click
+        $('#pause-music').on('click', function () {
+            music.pause();
+        });
+
+        $('#play-music').on('click', function () {
+            music.play();
+        });
+    });
 </script>
-
-</body>	
-</html>

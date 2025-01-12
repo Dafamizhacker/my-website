@@ -48,27 +48,44 @@ Update Date:  01/January/2024
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
 
 /*===============
-***General Styling 
+*** General Styling
 ===============*/
-html,body{
-	font-family: "Roboto", "Segoe Ui";
-    /* Global font color */
-body {
-    color:#0000ff; /* Set the default font color here */
-    font-family: 'Arial', ; /* Optional: Set your desired font */
+/* Global Styling for Body */
+html, body {
+    font-family: "Roboto", "Segoe Ui";
 }
 
-}
 body {
-    float: left;
-    width: 100%;
+    color: #0000ff; /* Set the default font color here */
+    font-family: 'Arial', sans-serif; /* Set the desired font */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    color: #474962;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     font-size: 14px;
-	letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
 }
+
+/* Optional: Music player styling */
+.music-controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.music-controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.music-controls button:hover {
+    background-color: #0056b3;
+}
+
 p {
     font-size: 14px;
     letter-spacing: 0.1px;
@@ -363,6 +380,41 @@ section {
 }
 
 /* custom-style.css */
+/* Global Styling for Body */
+html, body {
+    font-family: "Roboto", "Segoe Ui";
+}
+
+body {
+    color: #0000ff; /* Set the default font color here */
+    font-family: 'Arial', sans-serif; /* Set the desired font */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+/* Optional: Music player styling */
+.music-controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.music-controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.music-controls button:hover {
+    background-color: #0056b3;
+}
 .gray-bg {
     float: left;
     width: 100%;
