@@ -42,8 +42,8 @@ Update Date:  01/January/2024
 */
 
 
-/*=============== Fonts source Pacifico, Montserrat, Dancing Script, Raleway ===================*/
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/*=============== Fonts source Yearbook, Montserrat, Dancing Script, Raleway ===================*/
+@import url('https://fonts.googleapis.com/css2?family=Yearbook&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
@@ -54,13 +54,13 @@ Update Date:  01/January/2024
 ===============*/
 /* Global Styling for Body */
 html, body {
-    font-family: "Roboto", "Segoe Ui";
+    font-family:"Yearbook", "Roboto", "Segoe Ui";
 }
 
 /* Links */
 a {
-    font-family: "Dancing Script", cursive; /* Elegant font for links */
-    color: #ff9900; /* Bright orange for links */
+    font-family: "Yearbook", yearbook; /* Elegant font for links */
+    color:var(--polynesian-white); /* Bright orange for links */
     text-decoration: none;
 }
 
@@ -402,7 +402,7 @@ body {
     /*===============
     *** General Styling
     ===============*/
-    /* font-family: "Montserrat", "Roboto", "Segoe UI", sans-serif; /* Primary font stack */
+    font-family: "Montserrat", "Roboto", "Segoe UI", "Yearbook"; /* Primary font stack */
     font-size: 16px; /* Default font size */
     color: #e0f7fa; /* Cool cyan for text */
     background-color: #003366; /* Deep oceanic blue background for an island feel */
@@ -427,10 +427,9 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Pacifico", cursive; /* Fun, tropical style for headings */
-    color: #00bcd4; /* Bright cyan for headings */
+    font-family: "Yearbook", sans-serif;
+    color: #00bcd4;
 }
-
 p {
     font-family: "Raleway", sans-serif; /* Modern and elegant font for body text */
     font-size: 16px;
@@ -442,7 +441,7 @@ p {
 
 /* Links */
 a {
-    font-family: "Dancing Script", cursive; /* Elegant font for links */
+    font-family: "Yearbook"; /* Elegant font for links */
     color: #00bcd4; /* Cyan for links */
     text-decoration: none;
 }
@@ -4892,7 +4891,7 @@ canvas {
 .mh-head .hamburger-inner,
 .mh-head .hamburger-inner:after,
 .mh-head .hamburger-inner:before {
-    background: #fff;
+    background:var(--polynesian-gold);
 }
 
 .circle-media.mm-listview {
@@ -4902,7 +4901,7 @@ canvas {
 }
 
 .circle-media.mm-listview > li a {
-    background: #e7e7e7 none repeat scroll 0 0;
+    background: var(--polynesian-light-beige) repeat scroll 0 0;
     line-height: 32px;
     padding: 0;
     text-align: center;
@@ -4926,7 +4925,7 @@ canvas {
 
 .mm-navbar .mm-title {
     text-transform: uppercase;
-    color: #474962 !important;
+    color:var(--polynesian-gold) !important;
     font-weight: 500;
 }
 .mh-head {
@@ -11281,7 +11280,7 @@ aside .widget.pitnik-links > ul > li > a {
 }
 
 .main-menu {
-    color: #fff;
+    color:var(--polynesian-gold);
     display: inline-block;
     font-size: 20px;
     margin-right: 30px;
@@ -11302,7 +11301,7 @@ aside .widget.pitnik-links > ul > li > a {
     height: 22px;
 }
 .nav-list {
-    background: #2b2b50 none repeat scroll 0 0;
+    background:var(--polynesian-gold) none repeat scroll 0 0;
     color: #fff;
     list-style: outside none none;
     margin: 0;
@@ -11326,7 +11325,7 @@ aside .widget.pitnik-links > ul > li > a {
 }
 
 .nav-list > li ul {
-    background: #2b2b50 none repeat scroll 0 0;
+    background:var(--polynesian-gold) repeat scroll 0 0;
     border-radius: 0 0 4px 4px;
     border-top: 1px solid #fa6342;
     list-style: outside none none;
@@ -11365,7 +11364,7 @@ aside .widget.pitnik-links > ul > li > a {
 }
 
 .nav-list > li ul > li > a:hover {
-    background: #444468 none repeat scroll 0 0;
+    background: var(--polynesian-red) none repeat scroll 0 0;
     padding-left: 12px;
 }
 .nav-list > li > a > i {

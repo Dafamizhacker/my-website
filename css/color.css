@@ -289,11 +289,11 @@ h4.vote-title a:hover,
 }
 
 a {
-    color:olivedrab; /* Palm Green */
+    color:blue; /* Palm Green */
 }
 
 a:hover {
-    color: #FF6A13; /* Sunset Orange */
+    color:burlywood; /* Sunset Orange */
 }
 
 /*=========================
