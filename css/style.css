@@ -402,14 +402,27 @@ body {
     /*===============
     *** General Styling
     ===============*/
-    font-family: "Montserrat", "Roboto", "Segoe UI", sans-serif; /* Primary font stack */
+    /* font-family: "Montserrat", "Roboto", "Segoe UI", sans-serif; /* Primary font stack */
     font-size: 16px; /* Default font size */
     color: #e0f7fa; /* Cool cyan for text */
     background-color: #003366; /* Deep oceanic blue background for an island feel */
     line-height: 1.6; /* Improve readability */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; */
+}
+
+.gray-bg
+ {  background: linear-gradient(90deg, #ff0000, #ffff00, #008000, #000000);
+    background-size: 400% 400%; /* Makes the colors blend seamlessly */
+    animation: reggaeAnimation 6s linear infinite; /* Creates a slow shift of colors */
+    min-height: 100vh;
+    margin: 0;
+     /* float: left;
+    width: 100%; */
+    /* background-color:; polybackground */
+    /* background-size: cover;
+    background-position: center; */
 }
 
 /* Typography */
@@ -463,11 +476,20 @@ a:hover {
 .gray-bg {
     float: left;
     width: 100%;
-    background: url(../polybackground.PNG); /* polybackground */
+    background: linear-gradient(120deg, #0077b6, #0096c7, #f98404, #f72585);
+    background-size: 300% 300%; /* Creates a moving effect */
+    animation: gradientAnimation 8s ease infinite; /* Smooth transition effect */
+    min-height: 100vh; /* Full-screen height */
+    margin: 0; /* polybackground */
     background-size: cover;
     background-position: center;
 }
-
+/* Add animation for movement */
+@keyframes reggaeAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
 .bg-valvot{
     background-color: #ff6f61 !important; /* Coral color */
@@ -753,16 +775,20 @@ iframe {
 }*/
 
 #topcontrol {
-    border-radius: 100%;
-    color: #fff;
+    border-radius: 100%; /* Makes the element circular */
+    border: 2px solid var(--polynesian-green); /* Adds a visible circular border */
+    background-color:var(--polynesian-gold); /* Light green background inside the border */
+    color: var(--polynesian-red); /* Arrow or icon color */
     display: inline-block;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 18px; /* Adjust arrow size */
+    line-height: 40px; /* Aligns the arrow vertically */
     text-align: center;
-    transform: rotate(-15deg);
+    transform: rotate(-15deg); /* Tilt effect */
     transition: all 0.2s linear 0s;
     width: 40px;
+    height: 40px; /* Ensures the circle remains proportional */
     z-index: 99;
+  
 }
 
 #topcontrol:hover {
@@ -15332,7 +15358,7 @@ a.circle-btn:hover {
 a.shopping-cart {
     border-radius: 5px;
     bottom: 10px;
-    color: #fff;
+    color:var(--polynesian-red);
     display: inline-block;
     font-size: 13px;
     left: 10px;
@@ -21809,9 +21835,9 @@ footer {
     text-align: center;
 }
 
-/* Page-Specific Styles */
+/* Page-Specific Styles
 
-/* Login Page Styles */
+/* Login PPage Styles */
 .login-page {
     background-color: var(--polynesian-light-beige);
     color: var(--polynesian-blue);
@@ -21842,7 +21868,7 @@ footer {
 
     .navbar {
         font-size: 18px;
-    }
+    } */
 
     .footer {
         font-size: 14px;

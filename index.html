@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/color-pink.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <style>
+    <!-- <style>
         .music-controls {
             text-align: center;
             margin: 20px 0;
@@ -36,10 +36,10 @@
             width: 50%;
             margin: 10px auto;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="music-player">
+    <!-- <div class="music-player">
         <h3 style="text-align: center;">🎵 Welcome to the PolyLink Music Player</h3>
         <audio id="musicPlayer" src="poly-music.mp3/poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3"></audio>
 
@@ -74,7 +74,7 @@
         volumeControl.addEventListener('input', (e) => {
             musicPlayer.volume = e.target.value;
         });
-    </script>
+    </script> -->
 </body>
 </html>
 
@@ -3618,37 +3618,4 @@
 <script src="js/stories-zuck-init.js"></script>
 <script src="js/script.js"></script>
 <script>
-    jQuery(document).ready(function($) {
-        // Map location picker
-        $('#us3').locationpicker({
-            location: {
-                latitude: -8.681013,
-                longitude: 115.23506410000005
-            },
-            radius: 0,
-            inputBinding: {
-                latitudeInput: $('#us3-lat'),
-                longitudeInput: $('#us3-lon'),
-                radiusInput: $('#us3-radius'),
-                locationNameInput: $('#us3-address')
-            },
-            enableAutocomplete: true,
-            onchanged: function (currentLocation, radius, isMarkerDropped) {
-                // Uncomment line below to show alert on each Location Changed event
-                // alert("Location changed. New location (" + currentLocation.latitude + ", " + currentLocation.longitude + ")");
-            }
-        });
-
-        // Background music control
-        const music = document.getElementById('background-music');
-
-        // Pause and play music on button click
-        $('#pause-music').on('click', function () {
-            music.pause();
-        });
-
-        $('#play-music').on('click', function () {
-            music.play();
-        });
-    });
-</script>
+  
