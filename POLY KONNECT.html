@@ -5,177 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-	<title>POLY💕LINK Social Network</title>
+    <title>POLY💕LINK Social Network</title>
     <link rel="icon" href="images/logo.png" type="image/png" sizes="16x16"> 
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/color.css">
-	<link rel="stylesheet" href="css/color-pink.css">
+    <link rel="stylesheet" href="css/color-pink.css">
     <link rel="stylesheet" href="css/responsive.css">
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolyLink Music Player</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff7eb3, #ff758c);
-            color: white;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .music-player {
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            padding: 20px;
-            width: 80%;
-            max-width: 400px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        .music-controls {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .music-controls button {
-            padding: 10px 15px;
-            font-size: 16px;
-            color: white;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 5px;
-        }
-        .music-controls button:hover {
-            background-color: #0056b3;
-        }
-        .volume-slider {
-            width: 50%;
-            margin: 10px auto;
-        }
-        #progressBar {
-            width: 80%;
-            margin: 10px auto;
-            display: block;
-        }
-        select {
-            width: 100%;
-            padding: 8px;
-            border-radius: 5px;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-        select:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="css/custom-style.css"> <!-- Custom tropical style -->
 </head>
 <body>
-    <div class="music-player">
-        <h3 style="text-align: center;">🎵 Welcome to the PolyLink Music Player</h3>
-        <audio id="musicPlayer" src="poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3"></audio>
-
-        <div id="timeDisplay" style="text-align: center; margin-top: 10px;">
-            0:00 / 0:00
-        </div>
-
-        <input type="range" id="progressBar" min="0" value="0" step="0.1">
-
-        <div class="music-controls">
-            <button id="playButton">▶ Play</button>
-            <button id="pauseButton">⏸ Pause</button>
-        </div>
-
-        <div class="volume-slider">
-            <label for="volumeControl" style="display: block; text-align: center;">Volume:</label>
-            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
-        </div>
-
-        <div style="text-align: center; margin-top: 20px;">
-            <select id="trackSelector">
-                <option value="poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3">Fia - Love Me</option>
-                <option value="path-to-another-track.mp3">Another Song</option>
-            </select>
-        </div>
-    </div>
-
-    <script>
-        const playButton = document.getElementById('playButton');
-        const pauseButton = document.getElementById('pauseButton');
-        const musicPlayer = document.getElementById('musicPlayer');
-        const volumeControl = document.getElementById('volumeControl');
-        const progressBar = document.getElementById('progressBar');
-        const timeDisplay = document.getElementById('timeDisplay');
-        const trackSelector = document.getElementById('trackSelector');
-
-        // Play the audio
-        playButton.addEventListener('click', () => {
-            musicPlayer.play();
-        });
-
-        // Pause the audio
-        pauseButton.addEventListener('click', () => {
-            musicPlayer.pause();
-        });
-
-        // Adjust volume
-        volumeControl.addEventListener('input', (e) => {
-            musicPlayer.volume = e.target.value;
-        });
-
-        // Update progress bar as audio plays
-        musicPlayer.addEventListener('timeupdate', () => {
-            progressBar.value = musicPlayer.currentTime / musicPlayer.duration * 100;
-            const currentTime = formatTime(musicPlayer.currentTime);
-            const duration = formatTime(musicPlayer.duration);
-            timeDisplay.textContent = `${currentTime} / ${duration}`;
-        });
-
-        // Seek audio
-        progressBar.addEventListener('input', (e) => {
-            musicPlayer.currentTime = (e.target.value / 100) * musicPlayer.duration;
-        });
-
-        // Format time in minutes and seconds
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
-            return `${minutes}:${secs}`;
-        }
-
-        // Change track
-        trackSelector.addEventListener('change', (e) => {
-            musicPlayer.src = e.target.value;
-            musicPlayer.play();
-        });
-
-        // Handle audio errors
-        musicPlayer.addEventListener('error', () => {
-            alert('Failed to load the audio file. Please try again later.');
-        });
-    </script>
-</head>
-<body>
-<div class="wavy-wraper">
-		<div class="wavy">
-		  <span style="--i:1;">P</span>
-		  <span style="--i:2;">O</span>
-		  <span style="--i:3;">L</span>
-		  <span style="--i:4;">Y</span>
-		  <span style="--i:5;">L</span>
-		  <span style="--i:6;">I</span>
-		  <span style="--i:7;">N</span>
-		  <span style="--i:8;">K</span>
-		  <span style="--i:9;">💕</span>
+    <div class="wavy-wraper">
+        <div class="wavy">
+            <span style="--i:1;">P</span>
+            <span style="--i:2;">O</span>
+            <span style="--i:3;">L</span>
+            <span style="--i:4;">Y</span>
+            <span style="--i:5;">L</span>
+            <span style="--i:6;">I</span>
+            <span style="--i:7;">N</span>
+            <span style="--i:8;">K</span>
+            <span style="--i:9;">💕</span>
 		</div>
 	</div>
 <div class="theme-layout  gray-bg">
