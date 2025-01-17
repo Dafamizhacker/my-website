@@ -124,12 +124,12 @@
 						<li><a href="price-plans.html" title="">Price Plan</a></li>
 					</ul>
 				</li>
-				<li><span>Forum</span>
+				<li><span>Polytalk</span>
 					<ul>
-						<li><a href="forum.html" title="">Forum</a></li>
-						<li><a href="forum-create-topic.html" title="">Forum Create Topic</a></li>
-						<li><a href="forum-open-topic.html" title="">Forum Open Topic</a></li>
-						<li><a href="forums-category.html" title="">Forum Category</a></li>
+						<li><a href="Polytalk.html" title="">Polytalk</a></li>
+						<li><a href="Polytalk-create-topic.html" title="">Polytalk Create Topic</a></li>
+						<li><a href="Polytalk-open-topic.html" title="">Polytalk Open Topic</a></li>
+						<li><a href="Polytalks-category.html" title="">Polytalk Category</a></li>
 					</ul>
 				</li>
 				<li><span>Featured</span>
@@ -727,8 +727,8 @@
 					</a>
 				</li>
 				<li>
-					<a href="forum.html" title="Forum" data-toggle="tooltip" data-placement="right">
-						<i class="fa-brands fa-forumbee"></i>
+					<a href="Polytalk.html" title="Polytalk" data-toggle="tooltip" data-placement="right">
+						<i class="fa-brands fa-Polytalkbee"></i>
 					</a>
 				</li>
 				<li>
@@ -854,12 +854,12 @@
 						<li><a href="price-plans.html" title="">Price Plan</a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa-brands fa-forumbee"></i> Forum</a>
+				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa-brands fa-Polytalkbee"></i> Polytalk</a>
 					<ul class="submenu">
-						<li><a href="forum.html" title="">Forum</a></li>
-						<li><a href="forum-create-topic.html" title="">Forum Create Topic</a></li>
-						<li><a href="forum-open-topic.html" title="">Forum Open Topic</a></li>
-						<li><a href="forums-category.html" title="">Forum Category</a></li>
+						<li><a href="Polytalk.html" title="">Polytalk</a></li>
+						<li><a href="Polytalk-create-topic.html" title="">Polytalk Create Topic</a></li>
+						<li><a href="Polytalk-open-topic.html" title="">Polytalk Open Topic</a></li>
+						<li><a href="Polytalks-category.html" title="">Polytalk Category</a></li>
 					</ul>
 				</li>
 				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa-regular fa-star-christmas"></i> Featured</a>

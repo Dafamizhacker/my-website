@@ -13,7 +13,32 @@
     <link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/color-pink.css">
     <link rel="stylesheet" href="css/responsive.css">
-	<style>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyLink Music Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .music-player {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
         .music-controls {
             text-align: center;
             margin: 20px 0;
@@ -35,12 +60,35 @@
             width: 50%;
             margin: 10px auto;
         }
+        #progressBar {
+            width: 80%;
+            margin: 10px auto;
+            display: block;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        select:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="music-player">
         <h3 style="text-align: center;">🎵 Welcome to the PolyLink Music Player</h3>
-        <audio id="musicPlayer" src="poly-music.mp3/poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3"></audio>
+        <audio id="musicPlayer" src="poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3"></audio>
+
+        <div id="timeDisplay" style="text-align: center; margin-top: 10px;">
+            0:00 / 0:00
+        </div>
+
+        <input type="range" id="progressBar" min="0" value="0" step="0.1">
 
         <div class="music-controls">
             <button id="playButton">▶ Play</button>
@@ -51,6 +99,13 @@
             <label for="volumeControl" style="display: block; text-align: center;">Volume:</label>
             <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
         </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <select id="trackSelector">
+                <option value="poly-music.mp3/Fia - Love Me (Official Lyric Video).mp3">Fia - Love Me</option>
+                <option value="path-to-another-track.mp3">Another Song</option>
+            </select>
+        </div>
     </div>
 
     <script>
@@ -58,6 +113,9 @@
         const pauseButton = document.getElementById('pauseButton');
         const musicPlayer = document.getElementById('musicPlayer');
         const volumeControl = document.getElementById('volumeControl');
+        const progressBar = document.getElementById('progressBar');
+        const timeDisplay = document.getElementById('timeDisplay');
+        const trackSelector = document.getElementById('trackSelector');
 
         // Play the audio
         playButton.addEventListener('click', () => {
@@ -73,8 +131,38 @@
         volumeControl.addEventListener('input', (e) => {
             musicPlayer.volume = e.target.value;
         });
-    </script>
 
+        // Update progress bar as audio plays
+        musicPlayer.addEventListener('timeupdate', () => {
+            progressBar.value = musicPlayer.currentTime / musicPlayer.duration * 100;
+            const currentTime = formatTime(musicPlayer.currentTime);
+            const duration = formatTime(musicPlayer.duration);
+            timeDisplay.textContent = `${currentTime} / ${duration}`;
+        });
+
+        // Seek audio
+        progressBar.addEventListener('input', (e) => {
+            musicPlayer.currentTime = (e.target.value / 100) * musicPlayer.duration;
+        });
+
+        // Format time in minutes and seconds
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+            return `${minutes}:${secs}`;
+        }
+
+        // Change track
+        trackSelector.addEventListener('change', (e) => {
+            musicPlayer.src = e.target.value;
+            musicPlayer.play();
+        });
+
+        // Handle audio errors
+        musicPlayer.addEventListener('error', () => {
+            alert('Failed to load the audio file. Please try again later.');
+        });
+    </script>
 </head>
 <body>
 <div class="wavy-wraper">
@@ -194,12 +282,12 @@
 						<li><a href="price-plans.html" title="">Price Plan</a></li>
 					</ul>
 				</li>
-				<li><span>Forum</span>
+				<li><span>Polytalk</span>
 					<ul>
-						<li><a href="forum.html" title="">Forum</a></li>
-						<li><a href="forum-create-topic.html" title="">Forum Create Topic</a></li>
-						<li><a href="forum-open-topic.html" title="">Forum Open Topic</a></li>
-						<li><a href="forums-category.html" title="">Forum Category</a></li>
+						<li><a href="Polytalk.html" title="">Polytalk</a></li>
+						<li><a href="Polytalk-create-topic.html" title="">Polytalk Create Topic</a></li>
+						<li><a href="Polytalk-open-topic.html" title="">Polytalk Open Topic</a></li>
+						<li><a href="Polytalks-category.html" title="">Polytalk Category</a></li>
 					</ul>
 				</li>
 				<li><span>Featured</span>
@@ -839,7 +927,7 @@
 						</form>
 						<span>Help with this page</span>
 						<ul class="help-drop">
-							<li><a href="forum.html" title=""><i class="fa-brands fa-forumbee"></i> Community & Forum</a></li>
+							<li><a href="Polytalk.html" title=""><i class="fa-brands fa-Polytalkbee"></i> Community & Polytalk</a></li>
 							<li><a href="faq.html" title=""><i class="fa-regular fa-circle-question"></i> FAQs</a></li>
 							<li><a href="career.html" title=""><i class="fa-sharp fa-regular fa-signal"></i> Carrers</a></li>
 							<li><a href="privacy.html" title=""><i class="fa-regular fa-newspaper"></i> Terms & Policy</a></li>
@@ -968,12 +1056,12 @@
 						<li><a href="price-plans.html" title="">Price Plan</a></li>
 					</ul>
 				</li>
-				<li><a class="" href="#" title=""><i class="fa-brands fa-forumbee"></i> Forum</a>
+				<li><a class="" href="#" title=""><i class="fa-brands fa-Polytalkbee"></i> Polytalk</a>
 					<ul>
-						<li><a href="forum.html" title="">Forum</a></li>
-						<li><a href="forum-create-topic.html" title="">Forum Create Topic</a></li>
-						<li><a href="forum-open-topic.html" title="">Forum Open Topic</a></li>
-						<li><a href="forums-category.html" title="">Forum Category</a></li>
+						<li><a href="Polytalk.html" title="">Polytalk</a></li>
+						<li><a href="Polytalk-create-topic.html" title="">Polytalk Create Topic</a></li>
+						<li><a href="Polytalk-open-topic.html" title="">Polytalk Open Topic</a></li>
+						<li><a href="Polytalks-category.html" title="">Polytalk Category</a></li>
 					</ul>
 				</li>
 				<li><a class="" href="#" title=""><i class="fa-solid fa-star"></i> Featured</a>

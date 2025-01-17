@@ -42,10 +42,12 @@ Update Date:  01/January/2024
 */
 
 
-/*=============== Fonts source Muli, Hobostd ===================*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+/*=============== Fonts source Pacifico, Montserrat, Dancing Script, Raleway ===================*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
 
 /*===============
 *** General Styling
@@ -55,6 +57,17 @@ html, body {
     font-family: "Roboto", "Segoe Ui";
 }
 
+/* Links */
+a {
+    font-family: "Dancing Script", cursive; /* Elegant font for links */
+    color: #ff9900; /* Bright orange for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #33ccff; /* Highlighted blue for hover effect */
+    text-decoration: underline;
+}
 body {
     color: #0000ff; /* Set the default font color here */
     font-family: 'Arial', sans-serif; /* Set the desired font */
@@ -386,13 +399,44 @@ html, body {
 }
 
 body {
-    color: #0000ff; /* Set the default font color here */
-    font-family: 'Arial', sans-serif; /* Set the desired font */
+    /*===============
+    *** General Styling
+    ===============*/
+    font-family: "Montserrat", "Roboto", "Segoe UI", sans-serif; /* Primary font stack */
+    font-size: 16px; /* Default font size */
+    color: #e0f7fa; /* Cool cyan for text */
+    background-color: #003366; /* Deep oceanic blue background for an island feel */
+    line-height: 1.6; /* Improve readability */
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    font-size: 14px;
-    letter-spacing: 0.2px;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Pacifico", cursive; /* Fun, tropical style for headings */
+    color: #00bcd4; /* Bright cyan for headings */
+}
+
+p {
+    font-family: "Raleway", sans-serif; /* Modern and elegant font for body text */
+    font-size: 16px;
+    color: #f0f0f0; /* Softer white for better readability */
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0, 188, 212, 0.1); /* Cool cyan background with slight transparency */
+}
+
+/* Links */
+a {
+    font-family: "Dancing Script", cursive; /* Elegant font for links */
+    color: #00bcd4; /* Cyan for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00796b; /* Highlighted dark cyan for hover effect */
+    text-decoration: underline;
 }
 
 /* Optional: Music player styling */
@@ -405,7 +449,7 @@ body {
     padding: 10px 15px;
     font-size: 16px;
     color: white;
-    background-color: #007bff;
+    background-color: #0288d1; /* Blue shade for music controls */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -413,13 +457,17 @@ body {
 }
 
 .music-controls button:hover {
-    background-color: #0056b3;
+    background-color: #01579b; /* Darker blue on hover */
 }
+
 .gray-bg {
     float: left;
     width: 100%;
-    background:url(../polybackground.PNG);/* polybackground */
+    background: url(../polybackground.PNG); /* polybackground */
+    background-size: cover;
+    background-position: center;
 }
+
 
 .bg-valvot{
     background-color: #ff6f61 !important; /* Coral color */
@@ -2007,7 +2055,7 @@ form button {
 
 a.learnmore {
     border-radius: 30px;
-    color: #fff;
+    color:var(--polynesian-brown);
     display: inline-block;
     font-size: 12px;
     line-height: initial;
@@ -3639,7 +3687,7 @@ li.instagram {
 }
 /* Content Container Styles */
 .container {
-    background: rgba(255, 255, 255, 0.9);
+    background:none;
     margin: 20px auto;
     padding: 20px;
     max-width: 1200px;
@@ -5494,7 +5542,7 @@ canvas {
     right: 0;
     top: 8px;
     font-size: 13px;
-    color:#c4c4c4;
+    color:palevioletred;
 }
 .submenu {
     list-style: outside none none;
@@ -7298,7 +7346,7 @@ a.addnewforum {
 	height: 100vh;
 }
 .we-login-register {
-    background: rgba(250,99,66,.99);
+    background:var(--polynesian-blue);
     float: left;
     padding: 40px 55px 50px;
     position: relative;
@@ -7307,7 +7355,7 @@ a.addnewforum {
 	color:#fff;
 }
 .we-login-register::before {
-    border-color: rgba(250,99,66,.99) transparent transparent;
+    border-color:pol transparent transparent;
     border-style: solid;
     border-width: 40px 175px 0;
     bottom: -39px;
@@ -7334,7 +7382,7 @@ a.addnewforum {
     width: 100%;
 }
 .form-title > span {
-    color: #efefef;
+    color:var(--polynesian-white);
     float: left;
     font-size: 13px;
     padding-bottom: 20px;
