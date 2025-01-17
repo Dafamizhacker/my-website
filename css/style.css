@@ -21875,39 +21875,4 @@ footer {
     }
 }
 
-/* Default styles for desktop */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Customize with PolyLink's theme */
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Responsive styles for mobile (screen width <= 768px) */
-@media screen and (max-width: 768px) {
-    header {
-        font-size: 18px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column; /* Stack navigation links */
-    }
-
-    .sidebar {
-        display: none; /* Hide sidebars on smaller screens */
-    }
-
-    .main-content {
-        width: 100%; /* Make main content full width */
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-    }
-}
 }
