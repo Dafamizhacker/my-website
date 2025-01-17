@@ -21875,8 +21875,119 @@ footer {
     }
 }
 
+/* Default styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Customize with PolyLink's theme */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
+/* Responsive styles for mobile (screen width <= 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+    }
 
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Stack navigation links */
+    }
 
+    .sidebar {
+        display: none; /* Hide sidebars on smaller screens */
+    }
 
+    .main-content {
+        width: 100%; /* Make main content full width */
+    }
 
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* Adjust card layout for mobile screens */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Make cards full width */
+        margin: 10px 0; /* Add spacing between cards */
+    }
+}
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+}
